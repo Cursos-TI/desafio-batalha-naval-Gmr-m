@@ -15,11 +15,11 @@ int main() {
             for (int y = 0; y < 10; y++)
             {
                 tabuleiro[x][y] = y;
+                printf("\n\nValores := %d\n\n",x,y, tabuleiro[x][y]);
             }
-            
+
         }
         
-        printf("%d", tabuleiro);
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
 
 
