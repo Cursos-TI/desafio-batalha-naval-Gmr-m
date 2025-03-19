@@ -9,6 +9,7 @@ int main() {
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
 
         int tabuleiro [10][10];
+        int navios [3] = {3,3,3};
 
         for (int x = 0; x < 10; x++)
         {
@@ -16,11 +17,17 @@ int main() {
             for (int y = 0; y < 10; y++)
             {
                 tabuleiro[x][y] = 0;
+                if ( (x == 0 && (y == 0 || y == 1 || y == 2)) || (y == 9 && (x == 7 || x == 8 || x == 9)) )
+                {
+                    tabuleiro[x][y] = navios[y];
+                }
+                
                 printf("%d", tabuleiro[x][y]);
             }
             printf("\n");
 
         }
+
         
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
 
