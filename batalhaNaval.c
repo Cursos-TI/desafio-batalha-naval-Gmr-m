@@ -12,11 +12,13 @@ int main() {
 
         for (int x = 0; x < 10; x++)
         {
+            
             for (int y = 0; y < 10; y++)
             {
-                tabuleiro[x][y] = y;
-                printf("\n\nValores := %d\n\n",x,y, tabuleiro[x][y]);
+                tabuleiro[x][y] = 0;
+                printf("%d", tabuleiro[x][y]);
             }
+            printf("\n");
 
         }
         
